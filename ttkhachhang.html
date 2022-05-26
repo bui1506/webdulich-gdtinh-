@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TT KHÁCH HÀNG</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="jquery.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="./css/webdulich.css">
+	  <link rel="stylesheet" type="text/css" href="./css/thongtindieukhoan.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark nav1">
+	  <ul class="navbar-nav ml-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-phone"></i><span style="color: white"> 19001006</span></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-facebook-square"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
+	    </li>
+  	  </ul>
+	</nav>
+	<nav class="navbar navbar-expand-sm nav2 fixed-to6p bg-light">
+		<div class="navbar-brand">
+			<img src="./logo.png" srcset="./anh/logo.png" alt="logo">
+		</div>
+	  <ul class="navbar-nav mx-auto">
+	    <li class="nav-item">
+	      <a class="nav-link2" href="trangchu.html"><i class="fa fa-home"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="gioithieu.html"><b>GIỚI THIỆU</b></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="vqtg.html"><b>VÒNG QUANH THẾ GIỚI</b></a>
+	    </li>
+	    <li class="nav-item">
+	    	<div class="dropdown">
+				  <a class="nav-link" href="#"><b>KHÁM PHÁ VIỆT NAM</b></a>
+				  <div class="dropdown-content">
+				  		<b>
+						  <a href="mienbac.html">Miền Bắc</a>
+						  <a href="mientrung.html">Miền Trung</a>
+						  <a href="miennam.html">Miền Nam</a>
+						  <a href="cuoituan.html">Vui Chơi Cuối Tuần</a>
+						  <a href="duxuan.html">Tuor Du Xuân</a>
+						 </b>
+				  </div>
+			</div>
+	    </li>
+	     
+	     <li class="nav-item">
+	     	<div class="dropdown">
+				  <a class="nav-link" href="Lienhe.html"><b>DỊCH VỤ</b></a>
+				  <div class="dropdown-content">
+				  		<b>
+						  <a href="khachsan.html">Khách Sạn</a>
+						  <a href="sukien.html">Tổ Chức Sự Kiện</a>
+						 </b>
+				  </div>
+			</div>
+	    </li>
+	     <li class="nav-item">
+	     	<a class="nav-link" href="lienhe.html"><b>LIÊN HỆ</b></a>
+         </li>
+  	  </ul>
+	</nav>
+	<div class="mySlides fade">
+     
+    <img src="./anh/phuquoc.jpg" style="width:1300px; height:550px">
+    
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="./anh/lame-gi-khi-du-lich-phu-quoc.jpg" style="width:1300px; height: 550px">
+     
+  </div>
+   <div class="mySlides fade">
+  
+    <img src="./anh/au.jpg" style="width:1300px; height: 550px">
+     
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./anh/hoian.jpg" style="width:1300px ;height: 550px">
+ 
+   
+<br>
+ 
+ <script >
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+</div>
+		<div class="aaa">
+	  <form action="xulydangky.php" method="post" enctype="multipart/form-data">
+	    <div id="nen">
+	    	<br>
+	    	<br>
+	    	<h2 style="text-align: center;">THÔNG TIN KHÁCH HÀNG</h2>
+	    	<br>
+	      <div id="dk">
+        <div id="nd">
+          <table width="900px">
+          	<br>
+	            <tr>
+	              <div class="tt">
+	                <td widht="200"><label for="nn">Họ Tên (<span style="kihieu">*</span>)</label></td>
+	                <td width="400" ><input type="text" name="hoten" class="input1"/>
+	              </div>
+	              </td>
+	        </div>
+	        </tr>
+        <tr>
+	        <div class="tt">
+	        <td widht="200"><label for="nn">Số Điện Thoại (<span style="kihieu">*</span>) </label></td>
+	        <td width="400" ><input type="text" name="tdn" class="input1"/></div>
+        <!--<p class="xacnhanten">Ten dang nhap da ton ta.</p>-->
+	        </td>
+	      </div>
+	      </tr>
+	      <tr>
+       <div class="tt">
+	      <td widht="200"><label for="nn">Ngày Khởi Hành (<span style="kihieu">*</span>) </label></td>
+	      <td width="400" ><input type="date" name="mk" class="input1"/></div></td>
+	    </div>
+	    </tr>
+	    <tr>
+	    <div class="tt">
+	    <td width="200" ><label for="nn">Quốc Gia (<span style="kihieu">*</span>)</label></td>
+	    <td width="400" ><input type="text" name="xnmk" class="input1"/></div>
+	    <!-- <p class="xacnhanten">Ten dang nhap da ton ta.</p>-->
+	    </td>
+	    </div>
+	    </tr>
+	    <tr>
+	    <div class="tt">
+	    <td width="200" ><label for="nn">Giới Tính: </label></td>
+	    <td width="400" ><span style="font-size:20px;color:#000;margin-left:36px;padding:5px 5px;"><input type="radio" name="gioitinh" value="1" checked="checked"/>Nam
+	    <input type="radio" name="gioitinh" value="0" />Nữ</span>
+	    </td>
+	    </div>
+	    </tr>
+	    <tr>
+	    <div class="tt">
+	    <td width="200" ><label for="nn">Email: </label></td>
+	    <td width="400" ><input type="text" name="email" class="input1"/></td>
+	    </div>
+	    </tr>
+	    <tr>
+    <div class="tt">
+	    <td width="200" ><label for="nn">Địa Chỉ </label></td>
+    <td width="400" ><textarea name="diachi" style="font-size: 20px; color: rgb(0, 0, 0); margin-left: 38px; padding: 5px; width: 250px; height: 54px;font-family: serif"></textarea></td>
+	    </div>
+	    </tr>
+	    <tr>
+	    <div class="tt">
+	    <td width="200" ><label for="nn">Thông Tin Điều Khoản</label></td>
+	    <td width="400" ><div id="hide">
+	    <input type="button" value="Hide" class="hide" style="font-size:15px;color:#000;margin-left:36px;padding:2px 0px;"/>
+	    <input type="button" value="Show" class="show" style="font-size:15px;color:#000;padding:2px 0px;"/>
+	    </div>
+	    <div id="tt-dkhoan">
+	    <input type="button" id="dieukhoan" value="Đọc điều khoản" style="font-size:15px;color:#000;margin-left:36px;padding:2px 2px;"/></br>
+	    </div>
+	    <span style="font-size:20px;color:#000;margin-left:36px;padding:5px 5px;"><input type="checkbox" value="xacnhan_dk" name="xacnhan_dieukhoan" />Tôi chấp nhận điều khoản.</span>
+	    </td>
+	    </div>
+	    </tr>
+	    <tr>
+	    <div class="tt">
+	    <td colspan="2" align="center"><input type="submit" name="xn" class="nut" value="Đăng Ký">
+	    <input type="reset" name="huy" class="nut" value="Hủy"/></td>
+	    </div>
+	    </tr>
+	    </table>
+	    </div>
+	    </div><!--ket thuc dk-->
+	    </div><!---ket thuc nen-->
+<footer class="footer text-faded text-center py-5" style="background-color: #F2F2F2">
+      <p class="m-0 small">Copyright &copy; Your Website 2020 - Bản Quyền thuộc Discover
+      					<br> Được thiết kế bởi:Thùy Linh-Duy Minh - Minh Thuận
+      					<br> DISCOVER
+      </p>
+  </footer>
+</body>
+</html>

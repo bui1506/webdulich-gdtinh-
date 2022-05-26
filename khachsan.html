@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Trang Chủ</title>
+	<meta charset="utf-8">
+	  <meta name="viewport" content="width=device-width, initial-scale=1">
+	  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+	  <script type="text/javascript" src="jquery.js"></script>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" type="text/css" href="./css/webdulich.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-sm bg-dark nav1">
+	  <ul class="navbar-nav ml-auto">
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-phone"></i><span style="color: white"> 19001006</span></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-facebook-square"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-instagram"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="#"><i class="fa fa-envelope"></i></a>
+	    </li>
+  	  </ul>
+	</nav>
+	<nav class="navbar navbar-expand-sm nav2 fixed-to6p bg-light">
+		<div class="navbar-brand">
+			<img src="./logo.png" srcset="./anh/logo.png" alt="logo">
+		</div>
+	  <ul class="navbar-nav mx-auto">
+	    <li class="nav-item">
+	      <a class="nav-link2" href="trangchu.html"><i class="fa fa-home"></i></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="gioithieu.html"><b>GIỚI THIỆU</b></a>
+	    </li>
+	    <li class="nav-item">
+	      <a class="nav-link" href="vqtg.html"><b>VÒNG QUANH THẾ GIỚI</b></a>
+	    </li>
+	    <li class="nav-item">
+	    	<div class="dropdown">
+				  <a class="nav-link" href="#"><b>KHÁM PHÁ VIỆT NAM</b></a>
+				  <div class="dropdown-content">
+				  		<b>
+						  <a href="mienbac.html">Miền Bắc</a>
+						  <a href="mientrung.html">Miền Trung</a>
+						  <a href="miennam.html">Miền Nam</a>
+						  <a href="cuoituan.html">Vui Chơi Cuối Tuần</a>
+						  <a href="duxuan.html">Tuor Du Xuân</a>
+						 </b>
+				  </div>
+			</div>
+	    </li>
+	     <li class="nav-item">
+	     	<div class="dropdown">
+				  <a class="nav-link" href="#"><b>DỊCH VỤ</b></a>
+				  <div class="dropdown-content">
+				  		<b>
+						  <a href="khachsan.html">Khách Sạn</a>
+						  <a href="skien.html">Tổ Chức Sự Kiện</a>
+						 </b>
+				  </div>
+			</div>
+	    </li>
+	     <li class="nav-item">
+	     	<a class="nav-link" href="lienhe.html"><b>LIÊN HỆ</b></a>
+         </li>
+  	  </ul>
+	</nav>
+		<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+     
+    <img src="./anh/phuquoc.jpg" style="width:1350px; height:550px">
+    
+  </div>
+
+  <div class="mySlides fade">
+  
+    <img src="./anh/lame-gi-khi-du-lich-phu-quoc.jpg" style="width:1350px; height: 550px">
+     
+  </div>
+   <div class="mySlides fade">
+  
+    <img src="./anh/au.jpg" style="width:1350px; height: 550px">
+     
+  </div>
+
+  <div class="mySlides fade">
+    
+    <img src="./anh/hoian.jpg" style="width:1350px ;height: 550px">
+ 
+   
+<br>
+ 
+ <script >
+   var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}
+  slides[slideIndex-1].style.display = "block";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+	<div class="container mt-5">
+		<h2>DỊCH VỤ KHÁCH SẠN</h2>
+		<h5>===>> HIỆN KHÔNG CÒN PHÒNG TRỐNG</h5>
+	</div>
+</body>
+</html>
